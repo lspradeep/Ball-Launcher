@@ -10,5 +10,5 @@ jobs:
         env:
           UNITY_LICENSE: '${{ secrets.UNITY_LICENSE }}'
         with:
-          projectPath: ./
+          projectPath: ${{ matrix.projectPath }}
           githubToken: '${{ secrets.GITHUB_TOKEN }}'
