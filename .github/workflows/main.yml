@@ -10,4 +10,5 @@ jobs:
         env:
           UNITY_LICENSE: '${{ secrets.UNITY_LICENSE }}'
         with:
+          projectPath: Ball-Launcher/ProjectSettings/ProjectVersion.txt
           githubToken: '${{ secrets.GITHUB_TOKEN }}'
