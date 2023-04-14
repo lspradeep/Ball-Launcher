@@ -10,5 +10,5 @@ jobs:
         env:
           UNITY_LICENSE: '${{ secrets.UNITY_LICENSE }}'
         with:
-          projectPath: /Users/pradeep/Unity/Ball Launcher/ProjectSettings/ProjectSettings.asset
+          projectPath: ./
           githubToken: '${{ secrets.GITHUB_TOKEN }}'
