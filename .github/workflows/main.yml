@@ -1,6 +1,11 @@
-- uses: game-ci/unity-test-runner@v2
+name: Test run
+on:
+  workflow_dispatch: {}
+jobs:
+  activation:
+    - uses: game-ci/unity-test-runner@v2
   env:
     UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
   with:
-    projectPath: /Users/pradeep/Unity/Ball Launcher
+    projectPath: path/to/your/project
     githubToken: ${{ secrets.GITHUB_TOKEN }}
