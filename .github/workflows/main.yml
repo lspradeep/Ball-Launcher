@@ -10,6 +10,6 @@ jobs:
         env:
           UNITY_LICENSE: '${{ secrets.UNITY_LICENSE }}'
         with:
-          projectPath: ./Ball Launcher
+          projectPath: /Users/pradeep/Unity/Ball Launcher
           unityVersion: '${{ matrix.unityVersion }}'
           githubToken: '${{ secrets.GITHUB_TOKEN }}'
